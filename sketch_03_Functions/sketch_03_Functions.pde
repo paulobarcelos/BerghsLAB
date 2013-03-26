@@ -9,10 +9,27 @@ void doubleNumber(){
   number = number * 2;
 }
 
-// Every time we run the "doubleNumber()" function, we will
-// double the value that is stored in "number"
+// The above function doubles the value of "number" everytime it runs.
 
+// Every Processing program should have at least 2 functions:
+// "setup" and "draw"
+// They are special functions will be called automatically for you.
 
+void setup(){
+  // Everything here gets executed only once!
+  // In the beggining of the program...
+  
+  doubleNumber(); // now number is 20!
+}
 
-
-
+void draw(){
+  // Everything in here get executed...
+  // ...forever...
+  //           ...and ever...
+  //                      ...and ever!
+  
+  
+  // This function runs on every "frame" until your program is quit.
+  
+  doubleNumber(); // number is growing exponetially!
+}
